@@ -1,0 +1,21 @@
+.link-wrap {
+  margin: 8px 0;
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: $primary-400;
+  display: block;
+  font-weight: 500;
+  // outline: 1px solid red;
+}
+
+.link::before {
+  display: inline-block;
+  font-family: "bootstrap-icons"; // 指定 icon font
+  content: "\F144"; // 這裡填 icon 的 unicode 編碼
+  font-size: 20px;
+  margin-right: 8px; // 與文字的間距
+  vertical-align: middle;
+}
